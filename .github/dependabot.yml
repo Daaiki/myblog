@@ -12,6 +12,5 @@ updates:
   assignees:
     - daaiki
   commit-message:
-    prefix: fix
-    prefix-development: chore
-    include: scope
+    prefix: 'fix :bug:'
+    prefix-development: 'chore :teddy_bear:'
