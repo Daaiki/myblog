@@ -91,3 +91,7 @@ sw.*
 
 # git-cz (commit messages format configuration file)
 changelog.config.js
+
+# @nuxtjs/google-fonts (https://google-fonts.nuxtjs.org)
+assets/css/fonts.css
+assets/fonts
