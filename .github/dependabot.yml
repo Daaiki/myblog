@@ -13,4 +13,4 @@ updates:
       - daaiki
     commit-message:
       prefix: 'fix :bug:'
-      prefix-development: 'chore :teddy_bear:'
+      prefix-development: 'chore 🧸'
