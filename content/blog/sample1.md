@@ -1,6 +1,8 @@
 ---
-title: はじめまして。まえかわだいきです
-description: 初投稿なので、自己紹介します。
+title: 'Nuxt.jsでブログを作りました'
+date: '11. February 2021'
+category: 'technology'
+tags: 'Nuxt.js, Tailwind CSS, TypeScript'
 ---
 
 ## 2.md です
