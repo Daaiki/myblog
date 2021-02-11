@@ -1,14 +1,13 @@
 <template>
   <div>
-    <Header />
-    <Main>
-      <Card
-        v-for="(article, index) in articles"
-        :key="index"
-        :title="article.title"
-        :description="article.description"
-      />
-    </Main>
+    <Card
+      v-for="(article, index) in articles"
+      :key="index"
+      :title="article.title"
+      :date="article.date"
+      :category="article.category"
+      :tags="article.tags"
+    />
   </div>
 </template>
 

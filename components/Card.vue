@@ -1,9 +1,17 @@
 <template>
-  <article class="sm:pl-10 mb-10">
-    <h2 class="text-xl sm:text-2xl text-green-400 font-bold">{{ title }}</h2>
-    <p class="py-4 pl-3 sm:text-base text-sm">
-      {{ description }}
-    </p>
+  <article class="sm:pl-10 mb-10 w-11/12 sm:w-10/12 lg:w-6/12">
+    <h2
+      class="mt-16 sm:text-2xl text-xl text-pale-gray font-bold py-4 border-b border-pale-green"
+    >
+      {{ title }}
+    </h2>
+    <ul class="py-2 sm:text-sm text-xs xs:flex block items-center">
+      <li class="sm:mr-5 mr-2 xs:mb-0 mb-1">
+        <time>{{ date }}</time>
+      </li>
+      <li class="sm:mr-5 mr-2 xs:mb-0 mb-1">{{ category }}</li>
+      <li>{{ tags }}</li>
+    </ul>
   </article>
 </template>
 
@@ -14,7 +22,13 @@ export default Vue.extend({
     title: {
       type: String,
     },
-    description: {
+    date: {
+      type: String,
+    },
+    category: {
+      type: String,
+    },
+    tags: {
       type: String,
     },
   },
