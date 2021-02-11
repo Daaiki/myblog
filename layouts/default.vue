@@ -1,7 +1,8 @@
 <template>
-  <div>
+  <!-- sticky footer -->
+  <div class="min-h-screen flex flex-col">
     <Header />
-    <Container>
+    <Container class="flex-1">
       <Main>
         <Nuxt />
       </Main>
