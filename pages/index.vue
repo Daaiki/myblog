@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Title>Posts</Title>
     <Card
       v-for="(article, index) in articles"
       :key="index"
