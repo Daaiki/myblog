@@ -8,6 +8,7 @@
       :date="article.date"
       :category="article.category"
       :tags="article.tags"
+      :slug="'/posts/' + article.slug"
     />
   </div>
 </template>

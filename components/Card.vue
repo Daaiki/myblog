@@ -1,10 +1,12 @@
 <template>
   <article class="sm:pl-10 mb-10 w-11/12 sm:w-10/12 lg:w-6/12">
-    <h2
-      class="mt-16 sm:text-2xl text-xl text-pale-gray font-bold py-4 border-b border-pale-green"
-    >
-      {{ title }}
-    </h2>
+    <nuxt-link :to="slug">
+      <h2
+        class="mt-16 sm:text-2xl text-xl text-pale-gray font-bold py-4 border-b border-pale-green"
+      >
+        {{ title }}
+      </h2>
+    </nuxt-link>
     <ul class="py-2 sm:text-sm text-xs xs:flex block items-center">
       <li class="sm:mr-5 mr-2 xs:mb-0 mb-1">
         <time>{{ date }}</time>
@@ -29,6 +31,9 @@ export default Vue.extend({
       type: String,
     },
     tags: {
+      type: String,
+    },
+    slug: {
       type: String,
     },
   },
