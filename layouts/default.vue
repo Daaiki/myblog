@@ -2,7 +2,9 @@
   <div>
     <Header />
     <Container>
-      <Nuxt />
+      <Main>
+        <Nuxt />
+      </Main>
     </Container>
   </div>
 </template>
