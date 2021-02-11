@@ -17,7 +17,7 @@ import Vue from 'vue'
 
 export default Vue.extend({
   async asyncData({ $content }) {
-    const articles = await $content('blog').fetch()
+    const articles = await $content('posts').fetch()
     return { articles }
   },
 })
