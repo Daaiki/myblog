@@ -23,18 +23,23 @@ export default Vue.extend({
   props: {
     title: {
       type: String,
+      default: 'No Title.',
     },
     date: {
       type: String,
+      default: 'No Date',
     },
     category: {
       type: String,
+      default: 'No Catecory',
     },
     tags: {
       type: String,
+      default: 'No tags',
     },
     slug: {
       type: String,
+      default: 'error',
     },
   },
 })
