@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         'pale-green': '#d7e9c3',
         'pale-gray': '#969383',
+        'pale-white': '#fafafa',
       },
     },
     screens: {
