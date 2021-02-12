@@ -2,11 +2,14 @@
   <!-- sticky footer -->
   <div class="min-h-screen flex flex-col">
     <Header />
-    <Container class="flex-1">
-      <Main>
-        <Nuxt />
-      </Main>
-    </Container>
+    <div class="flex flex-1">
+      <Container>
+        <Main>
+          <Nuxt />
+        </Main>
+      </Container>
+      <SideBar />
+    </div>
     <Footer />
   </div>
 </template>
