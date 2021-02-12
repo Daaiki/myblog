@@ -29,6 +29,8 @@ const config: NuxtConfig = {
   plugins: [
     // https://github.com/antonreshetov/vue-unicons
     { src: '~/plugins/vue-unicons', mode: 'client' },
+    // https://imfaber.github.io/vue-tasty-burgers/dist/#/index
+    { src: '~/plugins/vue-tasty-burgers', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
