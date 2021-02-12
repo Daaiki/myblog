@@ -6,7 +6,12 @@
       &#64;daiki&rsquo;s Blog
     </h1>
     <div class="flex fixed right-0">
-      <SnsIcons class="pt-1 bg-pale-white" />
+      <SnsIcons
+        class="pt-1 bg-pale-white"
+        width="30"
+        height="30"
+        classes="cursor-pointer mr-5"
+      />
       <div class="bg-pale-green h-24 w-24 flex justify-center items-center">
         <tasty-burger-button
           type="collapse"
