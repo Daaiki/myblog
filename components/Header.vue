@@ -14,13 +14,32 @@
       />
       <div class="bg-pale-green h-24 w-24 flex justify-center items-center">
         <tasty-burger-button
-          type="collapse"
-          active="false"
-          size="m"
-          color="#969383"
-          active-color="#5e5e5e"
+          :type="buttonType"
+          :size="size"
+          :color="color"
+          :active-color="activeColor"
+          @toggle="onClick"
         />
       </div>
     </div>
   </header>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  data() {
+    return {
+      buttonType: 'collapse',
+      size: 'm',
+      color: '#969383',
+      activeColor: '#5e5e5e',
+    }
+  },
+  methods: {
+    onClick() {
+      this.$emit('hamburgerClick')
+    },
+  },
+})
+</script>

@@ -1,18 +1,34 @@
 <template>
   <!-- sticky footer -->
   <div class="min-h-screen flex flex-col">
-    <Header />
+    <Header @hamburgerClick="hiddenSidebar" />
     <div class="flex flex-1">
       <Container>
         <Main>
           <Nuxt />
         </Main>
       </Container>
-      <SideBar />
+      <SideBar :class="{ hidden: isHidden }" />
     </div>
     <Footer />
   </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  data() {
+    return {
+      isHidden: true,
+    }
+  },
+  methods: {
+    hiddenSidebar() {
+      this.isHidden = !this.isHidden
+    },
+  },
+})
+</script>
 
 <style>
 html {
