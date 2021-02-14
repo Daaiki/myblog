@@ -2,7 +2,7 @@
   <header class="flex justify-between items-center z-50">
     <nuxt-link to="/">
       <h1
-        class="font-bold text-pale-gray tracking-wide text-xl sm:text-2xl md:text-3xl lg:pl-16 md:pl-10 sm:pl-6 pl-3 sm:my-6"
+        class="hover:text-hover-gray font-bold text-pale-gray tracking-wide text-xl sm:text-2xl md:text-3xl lg:pl-16 md:pl-10 sm:pl-6 pl-3 sm:my-6"
       >
         &#64;daiki&rsquo;s Blog
       </h1>

@@ -8,7 +8,9 @@
       height="45"
     />
     <nuxt-link :to="'/categories/' + category">
-      <h2 class="pl-2 font-bold text-4xl text-pale-gray">{{ category }}</h2>
+      <h2 class="hover:text-hover-gray pl-2 font-bold text-4xl text-pale-gray">
+        {{ category }}
+      </h2>
     </nuxt-link>
   </div>
 </template>

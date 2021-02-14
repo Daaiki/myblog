@@ -2,7 +2,7 @@
   <article class="sm:pl-10 mb-10 w-11/12 sm:w-10/12 lg:w-6/12">
     <nuxt-link :to="slug">
       <h2
-        class="mt-16 sm:text-2xl text-xl text-pale-gray font-bold py-4 border-b border-pale-green"
+        class="mt-16 sm:text-2xl text-xl text-pale-gray font-bold py-4 border-b border-pale-green hover:text-hover-gray"
       >
         {{ title }}
       </h2>
