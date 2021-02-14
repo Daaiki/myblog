@@ -11,7 +11,15 @@
       <li class="sm:mr-5 mr-2 xs:mb-0 mb-1">
         <time>{{ date }}</time>
       </li>
-      <li class="sm:mr-5 mr-2 xs:mb-0 mb-1">{{ category }}</li>
+      <li class="sm:mr-5 mr-2 xs:mb-0 mb-1 flex items-center">
+        <unicon
+          class="inline-block pr-1"
+          name="folder"
+          fill="#5e5e5e"
+          width="17"
+          height="17"
+        />{{ category }}
+      </li>
       <li>{{ tags }}</li>
     </ul>
   </article>
