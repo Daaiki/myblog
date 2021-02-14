@@ -2,21 +2,32 @@
   <div>
     <Title class="mb-20">Categories</Title>
     <Categories
-      v-for="(category, index) in categories"
+      v-for="(category, index) in distinctCategories"
       :key="index"
-      :category="category.category"
+      :category="category"
     />
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
+
 export default Vue.extend({
   async asyncData({ $content }) {
-    const query = $content('posts', { deep: true }).only(['category'])
-    const categories = await query.fetch()
+    // eliminate duplicate categories.
+    // make an array of the fetched categories and use the Set().
+    const allCategories = await $content('posts', { deep: true })
+      .only(['category'])
+      .fetch()
+    const allCategoriesIntoArray = []
+    for (let i = 0; i < allCategories.length; i++) {
+      const categoryObj = allCategories[i]
+      const oneCategory = categoryObj.category
+      allCategoriesIntoArray.push(oneCategory)
+    }
+    const distinctCategories = [...new Set(allCategoriesIntoArray)]
     return {
-      categories,
+      distinctCategories,
     }
   },
 })
