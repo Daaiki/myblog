@@ -11,14 +11,17 @@
       <li class="sm:mr-5 mr-2 xs:mb-0 mb-1">
         <time>{{ date }}</time>
       </li>
-      <li class="sm:mr-5 mr-2 xs:mb-0 mb-1 flex items-center">
+      <li
+        class="sm:mr-5 mr-2 xs:mb-0 mb-1 flex items-center"
+        :class="categoryHidden"
+      >
         <unicon
           class="inline-block pr-1"
           name="folder"
           fill="#5e5e5e"
           width="17"
           height="17"
-        />{{ category }}
+        /><nuxt-link :to="'/categories/' + category">{{ category }}</nuxt-link>
       </li>
       <li>{{ tags }}</li>
     </ul>
@@ -38,6 +41,10 @@ export default Vue.extend({
       default: '',
     },
     category: {
+      type: String,
+      default: '',
+    },
+    categoryHidden: {
       type: String,
       default: '',
     },

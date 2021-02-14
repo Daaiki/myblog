@@ -6,9 +6,9 @@
       :key="index"
       :title="article.title"
       :date="article.date"
-      :category="article.category"
       :tags="article.tags"
       :slug="'/posts/' + article.slug"
+      category-hidden="hidden"
     />
   </div>
 </template>
