@@ -18,7 +18,9 @@ import Vue from 'vue'
 
 export default Vue.extend({
   async asyncData({ $content }) {
-    const articles = await $content('posts').fetch()
+    const articles = await $content('posts', { deep: true })
+      .sortBy('id', 'desc')
+      .fetch()
     return { articles }
   },
 })
