@@ -1,6 +1,6 @@
 <template>
   <ul
-    class="flex h-24 w-48 border-b-2 border-pale-green items-center justify-center pl-5"
+    class="flex h-16 md:h-24 md:w-48 border-b-2 border-pale-green items-center justify-center pl-5"
   >
     <li v-for="(item, index) in items" :key="index" :class="classes">
       <a :href="item.url">
