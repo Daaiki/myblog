@@ -15,7 +15,9 @@
             fill="#5e5e5e"
             width="17"
             height="17"
-          />{{ article.category }}
+          /><nuxt-link :to="'/categories/' + article.category">{{
+            article.category
+          }}</nuxt-link>
         </p>
       </div>
     </div>
