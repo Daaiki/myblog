@@ -6,14 +6,50 @@ const config: NuxtConfig = {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'myblog',
+    title: '@daiki’s blog',
     htmlAttrs: {
       lang: 'ja',
+      prefix: 'og: http://ogp.me.ns#',
     },
+    titleTemplate: '%s | @daiki’s blog',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'まえかわだいきの個人ブログ',
+      },
+      {
+        hid: 'og:site_name',
+        property: 'og_site_name',
+        content: '@daiki’s blog',
+      },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://daiki.vercel.app',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: '@daiki’s blog',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'まえかわだいきの個人ブログ',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '',
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
