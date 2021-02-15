@@ -4,7 +4,7 @@
       <h1
         class="hover:text-hover-gray font-bold text-pale-gray tracking-wide text-xl sm:text-2xl md:text-3xl lg:pl-16 md:pl-10 sm:pl-6 pl-3 sm:my-6"
       >
-        &#64;daiki&rsquo;s Blog
+        &#64;daiki&rsquo;s blog
       </h1>
     </nuxt-link>
     <div class="flex fixed right-0 top-0">
@@ -14,7 +14,9 @@
         height="30"
         classes="cursor-pointer mr-5"
       />
-      <div class="bg-pale-green h-16 w-16 md:h-24 md:w-24 flex justify-center items-center">
+      <div
+        class="bg-pale-green h-16 w-16 md:h-24 md:w-24 flex justify-center items-center"
+      >
         <tasty-burger-button
           :type="buttonType"
           :size="size"
@@ -42,9 +44,7 @@ export default Vue.extend({
     onClick() {
       this.$emit('hamburgerClick')
     },
-    responsiveIcon() {
-      
-    }
+    responsiveIcon() {},
   },
 })
 </script>
