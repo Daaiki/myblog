@@ -1,7 +1,9 @@
 <template>
   <article>
     <div class="xl:ml-24 lg:ml-12 -ml-4 sm:mb-24 mb-16 items-end">
-      <h1 class="font-bold my-2 py-1 mr-4 pl-4 border-l-8 border-pale-pink md:text-3xl text-2xl">
+      <h1
+        class="font-bold my-2 py-1 mr-4 pl-4 border-l-8 border-pale-pink md:text-3xl text-2xl"
+      >
         {{ article.title }}
       </h1>
       <div class="flex ml-8 items-center">

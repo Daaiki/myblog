@@ -15,13 +15,21 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import Meta from '~/assets/mixins/meta'
 
 export default Vue.extend({
+  mixins: [Meta],
   async asyncData({ $content }) {
     const articles = await $content('posts', { deep: true })
       .sortBy('id', 'desc')
       .fetch()
     return { articles }
+  },
+  head(): object {
+    return {
+      titleTemplate: null,
+      title: '@daiki’s blog',
+    }
   },
 })
 </script>

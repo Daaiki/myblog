@@ -11,8 +11,10 @@
 
 <script>
 import Vue from 'vue'
+import Meta from '~/assets/mixins/meta'
 
 export default Vue.extend({
+  mixins: [Meta],
   async asyncData({ $content }) {
     // eliminate duplicate categories.
     // make an array of the fetched categories and use the Set().
@@ -28,6 +30,17 @@ export default Vue.extend({
     const distinctCategories = [...new Set(allCategoriesIntoArray)]
     return {
       distinctCategories,
+    }
+  },
+  data() {
+    return {
+      meta: {
+        title: 'Categories',
+        description: '@daiki’s blogのCategoriesページです',
+        type: 'article',
+        url: 'https://daiki.vercel.app/categories',
+        image: '',
+      },
     }
   },
 })
