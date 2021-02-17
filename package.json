@@ -51,6 +51,7 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
     "ts-jest": "^26.4.4",
+    "vue-burger-menu": "^2.0.5",
     "vue-jest": "^3.0.4",
     "vue-unicons": "^2.3.0"
   }
