@@ -1,6 +1,6 @@
 <template>
   <article>
-    <div class="xl:ml-24 lg:ml-12 -ml-4 sm:mb-24 mb-16 items-end">
+    <div class="xl:ml-24 lg:ml-12 -ml-2 sm:mb-24 mb-16 items-end">
       <h1
         class="font-bold my-2 py-1 mr-4 pl-4 border-l-8 border-pale-pink md:text-3xl text-2xl"
       >
@@ -77,6 +77,14 @@ export default Vue.extend({
 
   p {
     margin-bottom: 1.75rem;
+  }
+
+  a {
+    color: #6a95fc;
+  }
+
+  a:hover {
+    color: #457bfb;
   }
   // responsive
 }

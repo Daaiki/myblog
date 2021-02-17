@@ -8,7 +8,7 @@
       </h2>
     </nuxt-link>
     <ul class="py-2 sm:text-sm text-xs xs:flex block items-center">
-      <li class="sm:mr-5 mr-2 xs:mb-0 mb-1">
+      <li class="sm:mr-5 mr-2 xs:mb-0 mt-1 mb-2">
         <time>{{ date }}</time>
       </li>
       <li
