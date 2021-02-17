@@ -6,6 +6,8 @@ import {
   uniTwitterAlt,
   uniInstagram,
   uniFolder,
+  uniBars,
+  uniTimes,
 } from 'vue-unicons/src/icons'
 import 'vue-unicons/dist/vue-unicons-ssr.css'
 
@@ -15,5 +17,7 @@ Unicon.add([
   uniTwitterAlt,
   uniInstagram,
   uniFolder,
+  uniBars,
+  uniTimes,
 ])
 Vue.use(Unicon)

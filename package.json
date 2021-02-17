@@ -52,7 +52,6 @@
     "stylelint-config-standard": "^20.0.0",
     "ts-jest": "^26.4.4",
     "vue-jest": "^3.0.4",
-    "vue-tasty-burgers": "^1.2.3",
     "vue-unicons": "^2.3.0"
   }
 }
