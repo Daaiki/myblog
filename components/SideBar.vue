@@ -7,7 +7,7 @@
         <nuxt-link to="/">Posts</nuxt-link>
       </li>
       <li class="mb-10 hover:text-hover-gray">
-        <nuxt-link to="categories">Categories</nuxt-link>
+        <nuxt-link to="../categories">Categories</nuxt-link>
       </li>
       <li class="mb-10 hover:text-hover-gray">
         <nuxt-link to="about">About</nuxt-link>
