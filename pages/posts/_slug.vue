@@ -47,6 +47,11 @@ export default Vue.extend({
       // @ts-ignore
       title: this.article.title,
       meta: [
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
         // @ts-ignore
         { hid: 'og:title', property: 'og:title', content: this.article.title },
         // @ts-ignore
