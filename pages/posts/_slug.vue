@@ -67,6 +67,12 @@ export default Vue.extend({
           // @ts-ignore
           content: `https://res.cloudinary.com/dk7rud9cp/image/upload/1_text:Noto%20Sans%20JP_35_bold:${this.article.title},co_rgb:5E5E5E,w_600,c_fit/v1613314671/OGP/OGP_dmhlrm.png`,
         },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:image',
+          // @ts-ignore
+          content: `https://res.cloudinary.com/dk7rud9cp/image/upload/1_text:Noto%20Sans%20JP_35_bold:${this.article.title},co_rgb:5E5E5E,w_600,c_fit/v1613314671/OGP/OGP_dmhlrm.png`,
+        },
       ],
     }
   },
