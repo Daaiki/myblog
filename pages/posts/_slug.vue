@@ -37,6 +37,34 @@ export default Vue.extend({
     const article = await $content('posts', params.slug).fetch()
     return { article }
   },
+  data() {
+    return {
+      article: [],
+    }
+  },
+  head() {
+    return {
+      // @ts-ignore
+      title: this.article.title,
+      meta: [
+        // @ts-ignore
+        { hid: 'og:title', property: 'og:title', content: this.article.title },
+        // @ts-ignore
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          // @ts-ignore
+          content: `https://daiki.vercel.app/posts/${this.article.slug}`,
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          // @ts-ignore
+          content: `https://res.cloudinary.com/dk7rud9cp/image/upload/1_text:Noto%20Sans%20JP_35_bold:${this.article.title},co_rgb:5E5E5E,w_600,c_fit/v1613314671/OGP/OGP_dmhlrm.png`,
+        },
+      ],
+    }
+  },
 })
 </script>
 

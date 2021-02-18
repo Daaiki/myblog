@@ -26,5 +26,30 @@ export default Vue.extend({
       articles,
     }
   },
+  data() {
+    return {
+      article: [],
+    }
+  },
+  head() {
+    return {
+      // @ts-ignore
+      title: `${this.articles[0].category}の記事一覧`,
+      meta: [
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          // @ts-ignore
+          content: `${this.articles[0].category}の記事一覧`,
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          // @ts-ignore
+          content: `https://daiki.vercel.app/posts/categories/${this.articles[0].category}`,
+        },
+      ],
+    }
+  },
 })
 </script>
