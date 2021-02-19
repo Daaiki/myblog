@@ -71,20 +71,10 @@
       "hidden": false
     },
     {
-      "type": "style",
-      "section": "Styling",
-      "hidden": false
-    },
-    {
-      "type": "remove",
-      "section": "Remove",
-      "hidden": false
-    },
-    {
       "type": "package",
       "section": "Packages",
       "hidden": false
     }
   ],
-  "releaseCommitMessageFormat": "release: :bookmark: {{currentTag}}"
+  "releaseCommitMessageFormat": "release: :bookmark: v{{currentTag}}"
 }
