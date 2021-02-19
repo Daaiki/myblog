@@ -106,9 +106,9 @@ const config: NuxtConfig = {
       '@nuxtjs/google-gtag',
       {
         id: process.env.GOOGLE_ANALYTICS_ID,
-        debug: true
-      }
-    ]
+        debug: true,
+      },
+    ],
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
