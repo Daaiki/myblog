@@ -1,4 +1,5 @@
 import { NuxtConfig } from '@nuxt/types'
+require('dotenv').config()
 
 const config: NuxtConfig = {
   // Target: https://go.nuxtjs.dev/config-target
@@ -98,6 +99,16 @@ const config: NuxtConfig = {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://github.com/nuxt-community/dotenv-module
+    '@nuxtjs/dotenv',
+    // https://github.com/nuxt-community/google-gtag
+    [
+      '@nuxtjs/google-gtag',
+      {
+        id: process.env.GOOGLE_ANALYTICS_ID,
+        debug: true
+      }
+    ]
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
