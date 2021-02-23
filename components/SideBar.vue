@@ -10,7 +10,7 @@
         <nuxt-link to="../categories">Categories</nuxt-link>
       </li>
       <li class="mb-10 hover:text-hover-gray">
-        <nuxt-link to="about">About</nuxt-link>
+        <nuxt-link to="../about">About</nuxt-link>
       </li>
     </ul>
     <SnsIcons width="20" height="20" classes="cursor-pointer pr-3" />
