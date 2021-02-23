@@ -15,13 +15,13 @@
       :class="{ hidden: isHidden }"
     >
       <ul class="pt-48 pb-24 pl-12">
-        <li class="mb-10 hover:text-hover-gray">
+        <li class="mb-10 hover:text-hover-gray" @click="onClick">
           <nuxt-link to="/">Posts</nuxt-link>
         </li>
-        <li class="mb-10 hover:text-hover-gray">
+        <li class="mb-10 hover:text-hover-gray" @click="onClick">
           <nuxt-link to="../categories">Categories</nuxt-link>
         </li>
-        <li class="mb-10 hover:text-hover-gray">
+        <li class="mb-10 hover:text-hover-gray" @click="onClick">
           <nuxt-link to="../about">About</nuxt-link>
         </li>
       </ul>
