@@ -22,5 +22,6 @@ html {
   color: #5e5e5e;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  user-select: none;
 }
 </style>
