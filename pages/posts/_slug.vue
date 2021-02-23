@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article class="select-text">
     <div class="xl:ml-24 lg:ml-12 -ml-2 sm:mb-24 mb-16 items-end">
       <h1
         class="font-bold my-2 py-1 mr-4 pl-4 border-l-8 border-pale-pink md:text-3xl text-2xl"
