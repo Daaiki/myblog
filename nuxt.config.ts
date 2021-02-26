@@ -115,7 +115,11 @@ const config: NuxtConfig = {
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    // Cache management of modules with hard-source-webpack-plugin
+    // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-build#hardsource
+    hardSource: true,
+  },
 }
 
 export default config
