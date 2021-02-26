@@ -1,27 +1,24 @@
 <template>
   <div>
-    <div>
-      <unicon
-        :name="isHidden ? 'bars' : 'times'"
-        fill="#969383"
-        width="45"
-        height="45"
-        class="z-20 fixed right-0 top-0 mr-3 mt-3 md:mr-6 md:mt-6 cursor-pointer"
-        @click="onClick"
-      />
-    </div>
+    <unicon
+      :name="isHidden ? 'bars' : 'times'"
+      fill="#969383"
+      width="45"
+      height="45"
+      class="z-20 fixed right-0 top-0 mr-2 mt-2 md:mr-6 md:mt-6 cursor-pointer"
+    />
     <nav
       class="h-screen fixed top-0 right-0 bg-pale-green text-pale-gray z-0 w-48"
       :class="{ hidden: isHidden }"
     >
       <ul class="pt-48 pb-24 pl-12">
-        <li class="mb-10 hover:text-hover-gray" @click="onClick">
+        <li class="mb-10 hover:text-hover-gray">
           <nuxt-link to="/">Posts</nuxt-link>
         </li>
-        <li class="mb-10 hover:text-hover-gray" @click="onClick">
+        <li class="mb-10 hover:text-hover-gray">
           <nuxt-link to="../categories">Categories</nuxt-link>
         </li>
-        <li class="mb-10 hover:text-hover-gray" @click="onClick">
+        <li class="mb-10 hover:text-hover-gray">
           <nuxt-link to="../about">About</nuxt-link>
         </li>
       </ul>
@@ -38,9 +35,20 @@ export default Vue.extend({
       isHidden: true,
     }
   },
+  mounted() {
+    window.addEventListener('click', this.makeBreak)
+  },
+  beforeDestroy() {
+    window.removeEventListener('click', this.makeBreak)
+  },
   methods: {
-    onClick() {
-      this.isHidden = !this.isHidden
+    // @ts-ignore
+    makeBreak(event) {
+      if (!this.$el.contains(event.target)) {
+        this.isHidden = true
+      } else {
+        this.isHidden = !this.isHidden
+      }
     },
   },
 })
