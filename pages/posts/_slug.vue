@@ -54,7 +54,6 @@ export default Vue.extend({
         },
         // @ts-ignore
         { hid: 'og:title', property: 'og:title', content: this.article.title },
-        // @ts-ignore
         {
           hid: 'og:url',
           property: 'og:url',
@@ -112,6 +111,22 @@ export default Vue.extend({
     display: block;
     height: 3.8px;
     background: linear-gradient(to right, #d7e9c3, transparent);
+  }
+
+  @media (max-width: 640px) {
+    h2 {
+      border-bottom: solid 3px #eee;
+      position: relative;
+    }
+
+    h2::after {
+      position: absolute;
+      content: '';
+      display: block;
+      border-bottom: solid 3px #d7e9c3;
+      bottom: -3px;
+      width: 20%;
+    }
   }
 
   p {
