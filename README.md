@@ -1,20 +1,36 @@
 # myblog
 
-## Build Setup
+This is my personal blog.
 
+## :hammer_and_wrench: Setup
+Requires Docker or Node.js
+
+Use Docker
 ```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+  docker-compose build
+  docker-compose up -d
+  # geting into a Docker container's shell
+  docker-compose exec web ash
+  cd ./usr/src/app/app
+  # install dependencies
+  yarn install
+  # serve with hot reload at localhost:3000
+  yarn dev
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+Use Node.js
+```bash
+  cd app
+  # install yarn via npm
+  npm install -g yarn
+  # install dependencies
+  yarn install
+  # serve with hot reload at localhost:3000
+  yarn dev
+```
+
+## :zap: Use of Technology
+- Nuxt.js
+- Nuxt Content
+- Tailwind CSS
+- Docker Compose
