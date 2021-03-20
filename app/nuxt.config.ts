@@ -120,6 +120,16 @@ const config: NuxtConfig = {
     // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-build#hardsource
     hardSource: true,
   },
+
+  server: {
+    host: '0.0.0.0',
+  },
+
+  watchers: {
+    webpack: {
+      poll: true,
+    },
+  },
 }
 
 export default config
