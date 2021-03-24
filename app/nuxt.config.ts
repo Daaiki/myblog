@@ -84,7 +84,7 @@ const config: NuxtConfig = {
       '@nuxtjs/google-fonts',
       {
         families: {
-          'Noto+Sans+JP': true,
+          'Noto+Sans+JP': [400, 700],
         },
         display: 'block',
         download: true, // font optimization
