@@ -4,7 +4,7 @@
       <h1
         class="hover:text-hover-gray font-bold text-pale-gray text-2xl md:text-3xl lg:pl-16 md:pl-10 sm:pl-6 pl-3 h-8"
       >
-        &#64;daiki&rsquo;s blog
+        &#64;Daiki&rsquo;s blog
       </h1>
     </nuxt-link>
     <div class="flex fixed right-0 top-0">
